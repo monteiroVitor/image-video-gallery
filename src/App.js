@@ -1,10 +1,21 @@
 import React from 'react';
-
+import { Switch, Route, Redirect } from 'react-router-dom';
+//componentes
+import Home from './views/Home';
+import Video from './views/Video';
+import Navbar from './components/Navbar/Navbar';
+//rotas
+import { routes } from './helpers/data';
 function App() {
   return (
-    <div className=''>
-      <h1>teste</h1>
-    </div>
+    <>
+      <Navbar routes={routes} />
+      <Switch>
+        <Route path={'/'} exact component={Home} />
+        <Route path={'/videos'} exact component={Video} />
+        <Redirect to={'/'} />
+      </Switch>
+    </>
   );
 }
 
