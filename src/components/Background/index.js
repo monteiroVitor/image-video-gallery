@@ -9,7 +9,9 @@ function index({ image, children }) {
       <Content>
         {children}
         <span className='info'>
-          <a href={pageURL}>Credits: {user}</a>
+          <a data-testid='background-credit' href={pageURL}>
+            Credits: {user}
+          </a>
         </span>
       </Content>
     </Wrapper>

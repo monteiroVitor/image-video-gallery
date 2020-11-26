@@ -27,7 +27,7 @@ function Navbar({ routes }) {
           </button>
         </Header>
         <Links ref={linksContainerRef}>
-          <ul className='links' ref={linksRef}>
+          <ul data-testid='links-navbar' className='links' ref={linksRef}>
             {routes.map(({ id, url, text }) => {
               return (
                 <li key={id}>

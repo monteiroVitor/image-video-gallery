@@ -4,6 +4,7 @@ function index({ placeholder, query, setQuery, handleSubmit, Icon }) {
   return (
     <Form onSubmit={handleSubmit}>
       <Input
+        data-testid='input'
         type='text'
         placeholder={placeholder}
         value={query}

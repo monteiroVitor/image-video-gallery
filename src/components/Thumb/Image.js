@@ -5,7 +5,7 @@ function Image(props) {
   const { icons } = props;
   return (
     <Wrapper>
-      <img src={webformatURL} alt={tags} />
+      <img data-testid='image' src={webformatURL} alt={tags} />
       <Info>
         <div>
           <p>
@@ -15,7 +15,7 @@ function Image(props) {
             {favorites}
           </p>
         </div>
-        <a href={pageURL}>
+        <a data-testid='link' href={pageURL}>
           <h4>{user}</h4>
         </a>
       </Info>
