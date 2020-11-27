@@ -6,9 +6,14 @@ function Navbar({ routes }) {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
+  const current = localStorage.getItem('@image-video-gallery/route');
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
+  useEffect(() => {
+    localStorage.setItem('@image-video-gallery/route', routes[0].text);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (showLinks) {
@@ -31,7 +36,15 @@ function Navbar({ routes }) {
             {routes.map(({ id, url, text }) => {
               return (
                 <li key={id}>
-                  <a href={url}>{text}</a>
+                  <a
+                    className={current === text ? 'current' : null}
+                    onClick={() =>
+                      localStorage.setItem('@image-video-gallery/route', text)
+                    }
+                    href={url}
+                  >
+                    {text}
+                  </a>
                 </li>
               );
             })}

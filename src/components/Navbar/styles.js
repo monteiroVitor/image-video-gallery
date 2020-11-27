@@ -67,6 +67,9 @@ export const Links = styled.div`
       color: var(--clr-primary-5);
       padding-left: 1.5rem;
     }
+    .current {
+      color: var(--clr-primary-5);
+    }
   }
   @media screen and (min-width: 800px) {
     height: auto !important;
