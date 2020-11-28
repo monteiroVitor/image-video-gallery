@@ -1,70 +1,90 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1>Galeria de imagens e videos</h1> 
 
-## Available Scripts
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
+  <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
+  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 
-In the project directory, you can run:
+> Status do Projeto: :warning:  em desenvolvimento.
 
-### `yarn start`
+### Tópicos 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+:small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-### `yarn test`
+:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
-### `yarn build`
+:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Descrição do projeto 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="justify">
+ A aplicação permite ao usuário visualizar e pesquisar imagens ou vídeos, a paginação é feita utilizá infinite scroll e consome dados da api <a href=’https://pixabay.com/api/docs/’>Pixabay</a>.
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Funcionalidades
 
-### `yarn eject`
+:heavy_check_mark: Visualizar imagens ou vídeos
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+:heavy_check_mark: Pesquisar imagens ou vídeos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Layout ou Deploy da Aplicação :dash:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> Deploy da aplicação utilizando netlify: https://image-video-gallery.netlify.app/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Pré-requisitos
 
-## Learn More
+:warning: [Node](https://nodejs.org/en/download/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Como rodar a aplicação :arrow_forward:
+Obtenha a api key em [Pixabay](https://pixabay.com/api/docs/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+No terminal, clone o projeto: 
+```
+git clone https://github.com/monteiroVitor/image-video-gallery.git
+```
+Entre na pasta do projeto: 
+```
+cd image-video-gallery
+```
+Crie o arquivo .env na raiz da aplicação
+```
+touch .env
+``` 
+Adicione a constante contendo sua api key
+```
+REACT_APP_API_KEY=sua_api_key
+``` 
+Instale as dependências
+```
+yarn install
+``` 
+Execute a aplicação
+```
+yarn start
+``` 
 
-### Code Splitting
+## Como rodar os testes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Coloque um passo a passo para executar os testes
 
-### Analyzing the Bundle Size
+```
+yarn test
+```
+## Linguagens, dependencias e libs utilizadas :books:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
+- [Redux](https://redux.js.org/)
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+- [Styled Components](https://styled-components.com/)
 
-### Making a Progressive Web App
+## Licença 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The [MIT License]() (MIT)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
