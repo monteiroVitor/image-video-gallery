@@ -24,7 +24,7 @@
 ## Descrição do projeto 
 
 <p align="justify">
- A aplicação permite ao usuário visualizar e pesquisar imagens ou vídeos, a paginação é feita utilizá infinite scroll e consome dados da api <a href=’https://pixabay.com/api/docs/’>Pixabay</a>.
+ A aplicação permite ao usuário visualizar e pesquisar imagens ou vídeos, a paginação é feita utilizá infinite scroll e consome dados da api [Pixabay](https://pixabay.com/api/docs/)
 </p>
 
 ## Funcionalidades
