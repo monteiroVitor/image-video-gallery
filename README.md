@@ -71,8 +71,6 @@ yarn start
 
 ## Como rodar os testes
 
-Coloque um passo a passo para executar os testes
-
 ```
 yarn test
 ```
